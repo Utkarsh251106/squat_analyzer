@@ -1,0 +1,9 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore specific folder with spaces
+Computer Vision Engineering Mini Project/
+
+# Ignore environment variables file
+.env
