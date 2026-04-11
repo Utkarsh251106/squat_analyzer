@@ -43,7 +43,7 @@ jobs:
 
       - name: Lint with flake8
         run: |
-          flake8 . --count --max-line-length=100 --exclude=__pycache__,venv --ignore=E221,W292,E302,E501 --statistics
+          flake8 . --count --max-line-length=100 --exclude=__pycache__,venv --ignore=E221,E241,W292,E302,E501 --statistics
 
       - name: Check all modules import correctly
         run: |

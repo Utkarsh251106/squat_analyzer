@@ -168,10 +168,10 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown("### Thresholds")
-    back_thresh  = st.slider("Max back angle (°)",  10, 60, 35)
-    knee_thresh  = st.slider("Knee overshoot tolerance", 0.01, 0.15, 0.05, 0.01)
-    down_angle   = st.slider("Squat 'down' knee angle (°)", 70, 120, 100)
-    up_angle     = st.slider("Squat 'up' knee angle (°)",  130, 170, 150)
+    back_thresh = st.slider("Max back angle (°)", 10, 60, 35)
+    knee_thresh = st.slider("Knee overshoot tolerance", 0.01, 0.15, 0.05, 0.01)
+    down_angle = st.slider("Squat 'down' knee angle (°)", 70, 120, 100)
+    up_angle = st.slider("Squat 'up' knee angle (°)", 130, 170, 150)
 
     st.markdown("---")
     st.markdown("### About")
