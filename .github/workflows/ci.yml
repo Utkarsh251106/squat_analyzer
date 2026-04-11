@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [main]
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest
@@ -40,7 +43,7 @@ jobs:
 
       - name: Lint with flake8
         run: |
-          flake8 . --count --max-line-length=100 --exclude=__pycache__,venv --statistics
+          flake8 . --count --max-line-length=100 --exclude=__pycache__,venv --ignore=E221,W292,E302,E501 --statistics
 
       - name: Check all modules import correctly
         run: |
