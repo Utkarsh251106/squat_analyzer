@@ -7,7 +7,6 @@ Call `analyze_frame(frame, estimator, counter)` on every frame.
 
 import cv2
 import mediapipe as mp
-import numpy as np
 
 from rules import (check_back_angle, check_knee_over_toe,
                    check_hip_depth, is_in_squat_position)

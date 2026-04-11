@@ -1,5 +1,3 @@
-import numpy as np
-import pytest
 from rules import (compute_angle, check_back_angle,
                    check_knee_over_toe, check_hip_depth,
                    is_in_squat_position)
